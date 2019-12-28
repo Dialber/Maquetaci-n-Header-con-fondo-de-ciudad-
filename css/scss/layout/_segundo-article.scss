@@ -1,0 +1,89 @@
+@import "../utilities/funtions";
+.article{
+    //padding: 1rem;
+    padding-top: 2rem;
+    //$valor:;
+    
+    background-color:$backgroud-color-segundo-article;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    color: white;
+    
+    >*{
+        margin-bottom: 1rem;
+
+    }
+    p{
+        width: 90%;
+    }
+    img{
+        width: 20%;       
+    }
+    .tablet{
+        font-size: 8rem;
+        box-shadow: long-shadow(300,darken(#49a974,1% ));
+    }
+    
+}
+.article-segundo{
+    padding-bottom: 10rem;
+    
+    background: url("../imagenes/article_2/shadow.png")2% .55rem/58% no-repeat;
+    background-origin: content-box; 
+    background-color:$backgroud-color-segundo-article;
+}
+.article__imagen{
+    //filter: drop-shadow(-10px 10px #49a974);    
+}
+
+.article__h2{
+    //box-shadow: long-shadow(200,darken(#320800,10% ));
+   
+}
+@media (min-width:36rem){
+    .article{
+       p{
+           width: 85%;
+       }
+    }
+    .article-segundo{
+        padding-bottom: 13rem;
+    }
+    
+}
+@media (min-width:48rem){
+    .article{
+       p{
+           width: 75%;
+       }
+    }
+    .article-segundo{
+        padding-bottom: 20rem;
+    }
+}
+@media (min-width:62rem){
+    .article{
+        padding-top: 4rem;
+        padding-left: 15%;
+        padding-right: 15%;
+        p{
+            width: 100%;
+        }
+    }
+    
+}
+@media (min-width:75rem){
+    .article{
+        padding-top: 5rem;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    .article-segundo{
+        padding-bottom: 28rem;
+    }
+   
+}

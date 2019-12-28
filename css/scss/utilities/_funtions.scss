@@ -1,0 +1,11 @@
+@function long-shadow($numero,$color){
+    $box-shadow: -1px 1px #{$color};
+    @for $i from 1 through $numero{
+        $box-shadow:'#{$box-shadow},
+        #{-$i}px #{$i}px #{$color}';
+    }
+    @return unquote($box-shadow);
+}
+@function posicion-sombra(){
+    
+}

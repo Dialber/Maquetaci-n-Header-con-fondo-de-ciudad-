@@ -1,0 +1,25 @@
+.ok{
+    font-size: 2rem;
+    color: green;   
+    display: inline-block;   
+}
+@media (min-width:36rem){
+    .ok{
+        font-size: 2.3rem;
+    }
+}
+@media (min-width:48rem){
+    .ok{
+        font-size: 2.6rem;
+    }
+}
+@media (min-width:62rem){
+    .ok{
+        font-size: 2.9rem;
+    }
+}
+@media (min-width:75rem){
+    .ok{
+        font-size: 3.1rem;
+    }
+}

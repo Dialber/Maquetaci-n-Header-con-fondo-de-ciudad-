@@ -1,0 +1,21 @@
+.primer-article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width:36rem){
+.primer-article{
+    flex-direction: row;
+}
+    
+}
+@media (min-width:48rem){
+   
+}
+@media (min-width:62rem){
+    
+}
+@media (min-width:75rem){
+   
+}

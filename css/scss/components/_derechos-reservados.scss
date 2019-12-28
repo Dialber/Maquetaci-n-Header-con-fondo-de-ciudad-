@@ -1,0 +1,12 @@
+@import "../utilities/vars";
+.derechos-reservados{
+    background-color: $backgroud-color-tercer-article;
+    color: white;
+    display: inline-block;
+    padding: .5rem;
+    width: 100%;
+    height: 2rem;
+    a{
+        color: white;
+    }
+}

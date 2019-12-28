@@ -1,0 +1,53 @@
+.formulario{
+    width: 60%;
+    //padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: white;
+    color:#a19d9d;
+    border:.1rem solid black;
+    box-shadow:0 0 .5rem .001rem black;
+    >*{
+        
+        height: auto;
+        margin-bottom: .5rem;
+    }
+}
+.formulario__campo-texto{
+    padding: .3rem;
+    width: 80%;
+}
+
+@media (min-width:36rem){
+    .formulario{
+        width: 40%;
+    }
+    .formulario__campo-texto{
+        width: 55%;
+        line-height: 1.5rem;
+    }   
+}
+@media (min-width:48rem){
+    .formulario{
+        >*{
+            margin-bottom: .8rem;
+        }
+    }   
+}
+@media (min-width:62rem){
+    .formulario{
+        >*{
+            margin-bottom: 1.2rem;
+        }
+    }
+    
+}
+@media (min-width:75rem){
+   
+    .formulario{
+        >*{
+            margin-bottom: 1.5rem;
+        }
+    }
+    
+}

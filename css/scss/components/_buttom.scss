@@ -1,0 +1,38 @@
+.boton{
+    text-transform: uppercase;
+    padding: .4rem .5rem;
+    font-size: 1.1rem;
+   // width: 70%;
+    background-color: #227dd3;
+    color: white;
+}
+.tercer-article__boton{
+    position: relative;
+    top:2rem;
+    background-color: transparent;
+    border: .2rem solid white;
+    border-radius: .5rem;
+
+}
+@media (min-width:36rem){
+   .boton{
+        padding: 1rem 1rem;
+    }    
+}
+@media (min-width:48rem){
+    .boton{
+        padding: 1rem 1.3rem;
+    }
+   
+}
+@media (min-width:62rem){
+    .boton{
+        padding: 1rem 1.6rem;
+    }
+}
+@media (min-width:75rem){
+   
+    .boton{
+        padding: 1rem 1.9rem;
+    }
+}

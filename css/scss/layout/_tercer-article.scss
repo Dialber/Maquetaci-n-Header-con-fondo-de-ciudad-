@@ -1,0 +1,122 @@
+@import "../utilities/vars";
+.article__tercer-article{
+    transform: skewY(-14.5deg);
+    background-color: $backgroud-color-tercer-article;
+    position: relative;
+    top:-6.5rem;
+    padding-bottom: 3rem;
+    >*{
+        transform: skewY(14.5deg); 
+    }
+    position: relative;
+    
+    &::before{
+        position: absolute;
+        content: "";
+        top:-.95rem;
+        left: 0;
+        width: 100%;
+        height: 1rem;
+        background-color:#308355;
+        z-index: -1;
+        clip-path: polygon(100% 0,100% 100%,0 100%);
+        
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        bottom: -22%;
+        left: 0;
+        width: 100%;
+        height: 55%;
+        background-color: $backgroud-color-tercer-article;
+        transform: skewY(14.5deg);
+        z-index: -1;
+    }
+   
+}
+.article__tercer-article__contenedor{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 2 1;
+    align-items: center;
+    
+    >*{
+        margin-bottom: 1rem;
+    }
+    
+}
+.article__tercer-article__imagen{
+   flex: 1 1;
+   max-width: 20%;
+   margin-left: 3rem;
+   filter: drop-shadow(-10px 10px #37895b);    
+}
+@media (min-width:36rem){
+    .article__tercer-article{
+        flex-direction: row;
+        padding-top: 8rem;        
+    
+    &::after{
+        bottom: -25%;
+    }
+    }
+    .article__tercer-article__imagen{
+       position: relative;
+       top:-5rem
+    }
+    .article__tercer-article__contenedor{
+      margin-left: 1rem;
+    }
+    
+}
+@media (min-width:48rem){
+    .article__tercer-article{
+        top:-9rem;
+        padding-top: 10rem;
+        &::after{
+            bottom: -30%;
+            height: 70%;
+        }
+    }
+    .article__tercer-article__contenedor{
+        margin-left: 2rem;
+      }
+    .article__tercer-article__imagen{
+        max-width: 40%;
+        
+     }
+}
+@media (min-width:62rem){
+    .article__tercer-article{
+        top:-12rem;
+        padding-top: 12rem;
+        &::after{
+            height: 80%;
+            bottom: -35%;
+           
+        }
+    }
+    .article__tercer-article__contenedor{
+        margin-left: 3rem;
+      }
+    .article__tercer-article__imagen{
+        left: -5rem;
+        max-width: 50%;
+     }
+}
+@media (min-width:75rem){
+    .article__tercer-article{
+        padding-top: 15rem;
+        top:-14rem;
+        &::after{
+            height: 100%;
+            bottom: -45%;
+           
+        }
+    }
+    .article__tercer-article__contenedor{
+        margin-left: 4rem;
+      }
+}
