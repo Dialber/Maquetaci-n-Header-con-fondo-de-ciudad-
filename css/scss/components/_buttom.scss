@@ -1,17 +1,21 @@
+@import"../utilities/mixins";
+@import "../utilities/vars";
 .boton{
     text-transform: uppercase;
     padding: .4rem .5rem;
-    font-size: 1.1rem;
-   // width: 70%;
-    background-color: #227dd3;
+    font-size: 1.1rem;   
+    background-color:$color-bottom-header;
+    @include Darken($color-bottom-header);
     color: white;
+    
 }
 .tercer-article__boton{
     position: relative;
-    top:2rem;
-    background-color: transparent;
+    top:2rem;    
     border: .2rem solid white;
     border-radius: .5rem;
+    background-color: transparent;
+    @include Darken($backgroud-color-tercer-article);
 
 }
 @media (min-width:36rem){

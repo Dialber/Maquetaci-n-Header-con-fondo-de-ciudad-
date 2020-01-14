@@ -1,7 +1,16 @@
+@import "../utilities/mixins";
 .ok{
     font-size: 2rem;
     color: green;   
-    display: inline-block;   
+    display: inline-block;
+    &:hover{
+        color: darken($color: green, $amount: 10%);
+    }
+    &:active{
+        color: darken($color: green, $amount: 15%);
+        transform: scale(0.9);
+    }
+    
 }
 @media (min-width:36rem){
     .ok{
