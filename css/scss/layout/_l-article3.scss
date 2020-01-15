@@ -1,5 +1,6 @@
 @import "../utilities/vars";
-.article__tercer-article{
+@import "../utilities/mixins";
+.l-article3{
     transform: skewY(-14.5deg);
     background-color: $backgroud-color-tercer-article;
     position: relative;
@@ -8,34 +9,30 @@
     >*{
         transform: skewY(14.5deg); 
     }
-    position: relative;
-    
-    &::before{
+    position: relative;    
+    &::before,&::after{
         position: absolute;
-        content: "";
-        top:-.95rem;
-        left: 0;
-        width: 100%;
-        height: 1rem;
-        background-color:#308355;
+        content: "";        
+        width: 100%;      
         z-index: -1;
-        clip-path: polygon(100% 0,100% 100%,0 100%);
-        
     }
-    &::after{
-        position: absolute;
-        content: "";
+    &::after{        
         bottom: -22%;
-        left: 0;
-        width: 100%;
+        left: 0;        
         height: 55%;
         background-color: $backgroud-color-tercer-article;
-        transform: skewY(14.5deg);
-        z-index: -1;
+        transform: skewY(14.5deg);       
     }
+    &::before{
+        top:-.95rem;
+        left: 0;
+        height: 1rem;
+        background-color:#308355;
+        clip-path: polygon(100% 0,100% 100%,0 100%); 
+    }   
    
 }
-.article__tercer-article__contenedor{
+.article3__contenedor{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -47,14 +44,22 @@
     }
     
 }
-.article__tercer-article__imagen{
+.article3__imagen{
    flex: 1 1;
    max-width: 20%;
    margin-left: 3rem;
    filter: drop-shadow(-10px 10px #37895b);    
 }
+.article3__boton{
+    position: relative;
+    top:2rem;    
+    border: .2rem solid white;
+    border-radius: .5rem;    
+    @include Darken($backgroud-color-tercer-article);
+
+}
 @media (min-width:36rem){
-    .article__tercer-article{
+    .l-article3{
         flex-direction: row;
         padding-top: 8rem;        
     
@@ -62,17 +67,17 @@
         bottom: -25%;
     }
     }
-    .article__tercer-article__imagen{
+    .article3__imagen{
        position: relative;
        top:-5rem
     }
-    .article__tercer-article__contenedor{
+    .article3__contenedor{
       margin-left: 1rem;
     }
     
 }
 @media (min-width:48rem){
-    .article__tercer-article{
+    .l-article3{
         top:-9rem;
         padding-top: 10rem;
         &::after{
@@ -80,16 +85,16 @@
             height: 70%;
         }
     }
-    .article__tercer-article__contenedor{
+    .article3__contenedor{
         margin-left: 2rem;
       }
-    .article__tercer-article__imagen{
+    .article3__imagen{
         max-width: 40%;
         
      }
 }
 @media (min-width:62rem){
-    .article__tercer-article{
+    .l-article3{
         top:-12rem;
         padding-top: 12rem;
         &::after{
@@ -98,16 +103,16 @@
            
         }
     }
-    .article__tercer-article__contenedor{
+    .article3__contenedor{
         margin-left: 3rem;
       }
-    .article__tercer-article__imagen{
+    .article3__imagen{
         left: -5rem;
         max-width: 50%;
      }
 }
 @media (min-width:75rem){
-    .article__tercer-article{
+    .l-article3{
         padding-top: 15rem;
         top:-14rem;
         &::after{
@@ -116,12 +121,12 @@
            
         }
     }
-    .article__tercer-article__contenedor{
+    .article3__contenedor{
         margin-left: 4rem;
       }
 }
 @media (min-width:100rem){
-    .article__tercer-article{       
+    .l-article3{       
         top:-25rem;
         &::after{           
             bottom: -66%; 

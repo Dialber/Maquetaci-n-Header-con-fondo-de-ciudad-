@@ -1,3 +1,5 @@
+@import "../utilities/mixins";
+@import "../utilities/vars";
 .formulario{
     width: 60%;    
     padding-top: 1rem;
@@ -12,19 +14,46 @@
         text-align: center;
     }
 }
-.formulario__campo-texto{
+.formulario__campoTexto{
     padding: .3rem;
     width: 80%;
+}
+.formulario__ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;    
+}
+.formulario__li{
+    width: 100%;
+    height: auto;    
+    max-width: 25%;
+    &:nth-child(5),&:nth-child(6){
+        display: none;
+    }
+    img{
+        display: block;
+    }
+}
+.formulario__boton{
+    @include Darken($color-bottom-header);
 }
 
 @media (min-width:36rem){
     .formulario{
         width: 40%;
     }
-    .formulario__campo-texto{
+    .formulario__campoTexto{
         width: 55%;
         line-height: 1.5rem;
-    }   
+    }    
+     .formulario__li{
+        max-width: 25%;
+        &:nth-child(5),&:nth-child(6){
+            display: inline-block;
+        }
+     }
 }
 @media (min-width:48rem){
     .formulario{

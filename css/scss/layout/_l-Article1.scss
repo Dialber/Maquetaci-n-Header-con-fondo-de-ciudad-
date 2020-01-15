@@ -1,11 +1,11 @@
-.primer-article{
+.l-article1{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 @media (min-width:36rem){
-.primer-article{
+.l-article1{
     flex-direction: row;
 }
     

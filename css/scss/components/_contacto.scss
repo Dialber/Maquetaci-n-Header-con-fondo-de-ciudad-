@@ -2,16 +2,14 @@
     margin: auto;    
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;   
-    background-color:rgba(255, 255,255,.8);   
-    >*:not(i){
-        margin-bottom: .5rem;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;   
+    >*{
+        margin-bottom: 1rem;  
         padding:.2rem;
-        width: 95%;
-       
-    }
-    
+        width: 95%;   
+    }    
 }
 .contacto__textArea{
     max-width: 95%;
@@ -19,67 +17,71 @@
 
 @media (min-width:36rem){
     .contacto{        
-        >*:not(i){
-            margin-bottom: .6rem;
-            padding:.3rem;
-    
+        >*:not(i){          
+            padding:.3rem;    
         }
     }    
 }
 @media (min-width:48rem){
     .contacto{
+        background-color:rgba(255, 255,255,.8);  
         border-radius: 50%;
         width: 24rem;
         height: 24rem;
         position: absolute;        
-        top:0;
+        top:-1rem;
         left: 0;
         right: 0;
         left: 0;
         margin: auto;
         justify-content: space-around;
-        padding-top: 4rem;
-        >*:not(i){
-            margin-bottom: .7rem;
+        padding-top:4rem;
+        padding-bottom: 2rem;
+        
+        >*:not(i){         
+            margin-bottom: 0;     
             padding:.4rem;   
             width: 60%; 
             line-height: 2;
         }
-    }
-   
+        &:hover{
+            background-color: #ffffff;
+        }
+    }   
 }
 @media (min-width:62rem){
-    .contacto{
+    .contacto{  
+        top:0;     
+        padding-top: 5rem;
+        padding-bottom: 3rem;
         width: 28rem;
-        height: 28rem;
-        >*:not(i){
-            margin-bottom: .8rem;
-            padding:.5rem;    
-        }
+        height: 28rem;       
     }
 }
 @media (min-width:75rem){
     .contacto{
+        padding-top: 6rem;
+        padding-bottom: 4rem;
         width: 35rem;
         height: 35rem;
-        >*:not(i){
-            margin-bottom: .9rem;
-            padding:.6rem;    
+        >*:not(i){            
+            padding:.5rem;    
         }
-    }
-   
+    }   
 }
 @media (min-width:100rem){    
     .contacto{
+        padding-top: 7rem;
+        padding-bottom: 5rem;
         width: 40rem;
         height: 40rem;       
-    }
-    
+    }    
 }
 @media (min-width:112rem){    
     .contacto{
+        padding-top: 8rem;
+        padding-bottom: 6rem;
         width: 45rem;
         height: 45rem;       
-    }
-    
+    }    
 }

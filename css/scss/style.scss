@@ -1,19 +1,17 @@
 @import "base/reset";
 @import "base/font";
 
-@import "layout/header";
-@import "layout/primer-article";
-@import "layout/segundo-article";
-@import "layout/tercer-article";
-@import "layout/footer";
+@import "layout/l-header";
+@import "layout/l-Article1";
+@import "layout/l-article2";
+@import "layout/l-article3";
+@import "layout/l-footer";
 
-@import "components/_buttom";
-@import "components/campo-texto";
+@import "components/headerContainer";
+@import "components/headerContainer__hgroup";
+@import "components/formulario";
+@import "components/buttom";
+@import "components/componentFigure";
 @import "components/contacto";
-@import "components/header__contenedor";
-@import "components/header__formulario";
-@import "components/header__hgroup";
-@import "components/formulario__ul";
-@import "components/primer-article__figure";
 @import "components/icono";
 @import "components/derechos-reservados";

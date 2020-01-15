@@ -3,20 +3,8 @@
 .boton{
     text-transform: uppercase;
     padding: .4rem .5rem;
-    font-size: 1.1rem;   
-    background-color:$color-bottom-header;
-    @include Darken($color-bottom-header);
-    color: white;
-    
-}
-.tercer-article__boton{
-    position: relative;
-    top:2rem;    
-    border: .2rem solid white;
-    border-radius: .5rem;
-    background-color: transparent;
-    @include Darken($backgroud-color-tercer-article);
-
+    font-size: 1.1rem;
+    color: white;    
 }
 @media (min-width:36rem){
    .boton{

@@ -1,8 +1,7 @@
 @import "../utilities/vars";
-.footer{
+.l-footer{
     width: 100%;
-    position: relative;
-    
+    position: relative;    
     &::after{
         content: "";
         position: absolute;
