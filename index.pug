@@ -12,12 +12,12 @@ html(lang="en")
     body
         header(class="l-header")
             article(class="headerContainer")
-                img(class="headerContainer__image",src="imagenes/header/logo.png", alt="", srcset="")
+                img(class="headerContainer__image",src="imagenes/header/logo.png", alt="")
                 hgroup(class="headerContainer__hgroup")
                     h1(class="headerContainer__h1") Seguro pusiste tus pies  
                     h2(class="headerContainer__h2") en el lugar correcto
                 article(class="formulario")
-                    input(class="formulario__campoTexto",type="text", name="name",value="valor", placeholder="Entre el codigo")
+                    input(class="formulario__campoTexto",type="text", name="name", placeholder="Entre el codigo")
                     ul(class="formulario__ul")
                         li(class="formulario__li"): img(src="imagenes/galeria_header/ensalada.jpg", alt="")
                         li(class="formulario__li"): img(src="imagenes/galeria_header/edificio.jpg", alt="")
@@ -39,21 +39,21 @@ html(lang="en")
                     h3(class="componentFigure__h3") Camera
                     p Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, sit.
         article(class="l-article2 article")            
-            img(class="article__imagen", src="imagenes/article_2/telefonos.png", alt="", srcset="")
+            img(class="article__imagen", src="imagenes/article_2/telefonos.png", alt="")
             h2(class="article__h2") Lorem ipsum, dolor sit. 
             p(class="article__primerParrafo") Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt animi non vel dolor laudantium totam aperiam laborum quo neque provident!
             p(class="article__segundoParrafo") Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod ullam quaerat iste autem quae totam non, laudantium explicabo commodi ut quisquam quos cupiditate labore minus excepturi at provident distinctio sed!
         article(class="l-article3 article")
-            img(class="article3__imagen", src="imagenes/article_3/monitor.png", alt="", srcset="")
+            img(class="article3__imagen", src="imagenes/article_3/monitor.png", alt="")
             article(class="article3__contenedor")
                 h2(class="article3__h2") Lorem ipsum, dolor sit. 
                 p(class="article3_segundoParrafo") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, ipsa distinctio rerum fugit nobis illum dolorem tempora omnis laudantium sequi officia, perferendis assumenda veniam enim fuga, recusandae consequatur quas exercitationem.
                 input(class="boton article3__boton ",type="button", value="Descargar")
         footer(class="l-footer")
-            img(class="footer__mapa", src="imagenes/footer/mapa.png", alt="mapa de contacto", srcset="")
+            img(class="footer__mapa", src="imagenes/footer/mapa.png", alt="mapa de contacto")
             article(class="contacto")
-                input(class="contacto__campoTexto",type="text", name="name",value="valor", placeholder="Nombre")
-                input(class="contacto__campoTexto",type="email", name="name",value="valor", placeholder="Correo electrónico")
+                input(class="contacto__campoTexto",type="text", name="name",value="", placeholder="Nombre")
+                input(class="contacto__campoTexto",type="email", name="name",value="", placeholder="Correo electrónico")
                 textarea(class="contacto__textArea", name="name_area", cols="30", rows="3", placeholder="Mensaje")               
                 i(class="fas fa-check-circle iconoOk")                
             em(class="contacto__derechosReservados")
