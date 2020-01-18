@@ -32,8 +32,7 @@
         height: 100%;
         top: 0;
         left: 0;
-        position: absolute;
-        background:linear-gradient(to right,$backgroud-color-segundo-article,transparent);         
+        position: absolute;              
     }
     >*{
         position: relative;
@@ -45,10 +44,6 @@
     filter: drop-shadow(-10px 10px #37895b);
 }
 
-.article__h2{
-    //box-shadow: long-shadow(200,darken(#320800,10% ));
-   
-}
 @media (min-width:36rem){
     .article__primerParrafo.article__segundoParrafo{
         width: 85%;
