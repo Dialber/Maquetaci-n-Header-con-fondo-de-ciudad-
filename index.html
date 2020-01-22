@@ -4,10 +4,8 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Document</title>
-    <link rel="stylesheet" href="css/normalize.css"/>
+    <title>Document        </title>
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="font/fontawesome/css/all.min.css"/>
   </head>
   <body>
     <header class="l-header">
@@ -17,7 +15,7 @@
           <h2 class="headerContainer__h2">en el lugar correcto</h2>
         </hgroup>
         <article class="formulario">
-          <input class="formulario__campoTexto" type="text" name="name" placeholder="Entre el codigo"/>
+          <input class="formulario__campoTexto inpuText" type="text" name="name" placeholder="Entre el codigo"/>
           <ul class="formulario__ul">
             <li class="formulario__li"><img src="imagenes/galeria_header/movil/ensalada.jpg" alt=""/></li>
             <li class="formulario__li"><img src="imagenes/galeria_header/movil/edificio.jpg" alt=""/></li>
@@ -59,10 +57,23 @@
     </article>
     <footer class="l-footer"><img class="footer__mapa" src="imagenes/footer/mapa.png" alt="mapa de contacto"/>
       <article class="contacto">
-        <input class="contacto__campoTexto" type="text" name="name" value="" placeholder="Nombre"/>
-        <input class="contacto__campoTexto" type="email" name="name" value="" placeholder="Correo electrónico"/>
-        <textarea class="contacto__textArea" name="name_area" cols="30" rows="3" placeholder="Mensaje">              </textarea><i class="fas fa-check-circle iconoOk">               </i>
-      </article><em class="contacto__derechosReservados"><a href="http://wwww.cssauthor.com">Designed by Cssauthor</a></em>
+        <div class="container contacto__containerName">
+          <label class="labelInfo" for="id_name" value="nombre">nombre</label>
+          <input class="contacto__campoTexto inpuText" id="id_name" required="required" type="text" name="name" value="" placeholder="Nombre"/>
+        </div>
+        <div class="container contacto__containerEmail">
+          <label class="labelInfo" for="id_email" value="correo">email</label>
+          <input class="contacto__campoTexto inpuText" id="id_email" required="required" type="email" name="name" value="" placeholder="Correo electrónico"/>
+        </div>
+        <div class="container contacto__containerMessaje">
+          <label class="labelInfo" for="id_message">messaje</label>
+          <textarea class="contacto__textArea inpuText" id="id_message" required="required" name="name_area" cols="30" rows="3" placeholder="Mensaje"></textarea>
+        </div>
+        <div class="container contacto__containerOk">
+          <label class="labelInfo" for="id_ok">                  </label>
+          <button class="iconoOk" id="id_ok" type="submit" value="">                                  </button>
+        </div>
+      </article><em class="contacto__derechosReservados"><a href="http://wwww.cssauthor.com" target="_blank">Designed by Cssauthor</a></em>
     </footer>
   </body>
 </html>

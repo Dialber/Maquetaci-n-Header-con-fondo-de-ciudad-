@@ -3,14 +3,20 @@
     font-size: 2rem;
     color: green;   
     display: inline-block;
+    background-color: transparent;
+    border: 0;
     &:hover{
+        cursor: pointer;
         color: darken($color: green, $amount: 10%);
     }
     &:active{
         color: darken($color: green, $amount: 15%);
         transform: scale(0.9);
+    }    
+    &::after{
+        content: "\2713";
+        font-weight: 900;
     }
-    
 }
 @media (min-width:36rem){
     .iconoOk{

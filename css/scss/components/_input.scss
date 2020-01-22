@@ -1,0 +1,21 @@
+@import "../utilities/vars";
+.inpuText{
+    width: 100%;
+    padding: .5rem;
+    transition: transform 0.1s ease-in;
+    border:.1rem solid $backgroud-color-segundo-article;
+    letter-spacing: .08rem;
+    &:hover{
+        box-shadow: 0 0 .3rem $backgroud-color-segundo-article;
+    }
+    &:focus-within{
+        box-shadow: 0 0 .4rem $backgroud-color-segundo-article;
+        transform: scale(1.02);
+    }
+}
+
+@media (min-width:75rem){
+    .inpuText{
+        line-height: 2rem;
+    }
+}

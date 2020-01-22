@@ -1,3 +1,4 @@
+@import "base/normalize";
 @import "base/reset";
 @import "base/font";
 
@@ -9,6 +10,7 @@
 
 @import "components/headerContainer";
 @import "components/headerContainer__hgroup";
+@import "components/input";
 @import "components/formulario";
 @import "components/buttom";
 @import "components/componentFigure";

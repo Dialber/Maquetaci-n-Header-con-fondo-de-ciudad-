@@ -6,13 +6,21 @@
     align-items: center;
     background-color: #ffffff;   
     >*{
-        margin-bottom: 1rem;  
-        padding:.2rem;
-        width: 95%;   
+        margin-bottom: .5rem;  
+        //padding:.2rem;
+        width: 80%; 
     }    
 }
+.labelInfo{
+    display: none;
+}
+.container{
+    widows: 100%;
+    height: auto;
+}
 .contacto__textArea{
-    max-width: 95%;
+    max-width:100%;
+    resize: none;
 }
 
 @media (min-width:36rem){
@@ -24,7 +32,7 @@
 }
 @media (min-width:48rem){
     .contacto{
-        background-color:rgba(255, 255,255,.8);  
+        background-color:rgba(255, 255,255,.6);  
         border-radius: 50%;
         width: 24rem;
         height: 24rem;
@@ -45,7 +53,7 @@
             line-height: 2;
         }
         &:hover{
-            background-color: #ffffff;
+            background-color: #ffffff;           
         }
     }   
 }

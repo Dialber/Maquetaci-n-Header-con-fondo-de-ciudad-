@@ -4,10 +4,8 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Document
-        link(rel="stylesheet", href="css/normalize.css")
-        link(rel="stylesheet", href="css/style.css")
-        link(rel="stylesheet", href="font/fontawesome/css/all.min.css")        
+        title Document        
+        link(rel="stylesheet", href="css/style.css")             
     body
         header(class="l-header")
             article(class="headerContainer")
@@ -16,7 +14,7 @@ html(lang="en")
                     h1(class="headerContainer__h1") Seguro pusiste tus pies  
                     h2(class="headerContainer__h2") en el lugar correcto
                 article(class="formulario")
-                    input(class="formulario__campoTexto",type="text", name="name", placeholder="Entre el codigo")
+                    input(class="formulario__campoTexto inpuText",type="text", name="name", placeholder="Entre el codigo")
                     ul(class="formulario__ul")
                         li(class="formulario__li"): img(src="imagenes/galeria_header/movil/ensalada.jpg", alt="")
                         li(class="formulario__li"): img(src="imagenes/galeria_header/movil/edificio.jpg", alt="")
@@ -51,12 +49,20 @@ html(lang="en")
         footer(class="l-footer")
             img(class="footer__mapa", src="imagenes/footer/mapa.png", alt="mapa de contacto")
             article(class="contacto")
-                input(class="contacto__campoTexto",type="text", name="name",value="", placeholder="Nombre")
-                input(class="contacto__campoTexto",type="email", name="name",value="", placeholder="Correo electrónico")
-                textarea(class="contacto__textArea", name="name_area", cols="30", rows="3", placeholder="Mensaje")               
-                i(class="fas fa-check-circle iconoOk")                
+                div(class="container contacto__containerName")
+                    label(for="id_name",class="labelInfo", value="nombre") nombre
+                    input(id="id_name",required,class="contacto__campoTexto inpuText",type="text", name="name",value="", placeholder="Nombre")
+                div(class="container contacto__containerEmail")
+                    label(for="id_email" value="correo" class="labelInfo") email
+                    input(id="id_email",required, class="contacto__campoTexto inpuText",type="email", name="name",value="", placeholder="Correo electrónico")
+                div(class="container contacto__containerMessaje")
+                    label(for="id_message" class="labelInfo") messaje
+                    textarea(id="id_message",required, class="contacto__textArea inpuText", name="name_area", cols="30", rows="3", placeholder="Mensaje")
+                div(class="container contacto__containerOk")
+                    label(for="id_ok" class="labelInfo")                   
+                    button(id="id_ok", class="iconoOk", type="submit", value="")                                   
             em(class="contacto__derechosReservados")
-                a(href="http://wwww.cssauthor.com") Designed by Cssauthor
+                a(href="http://wwww.cssauthor.com" target="_blank") Designed by Cssauthor
                
                 
 
